@@ -1,5 +1,5 @@
-const CACHE = 'stillday-shell-v4';
-const SHELL = ['/', '/index.html', '/manifest.webmanifest', '/favicon.svg', '/icon-192.png', '/icon-512.png', '/icon-180.png', '/app.js', '/supabase-config.js'];
+const CACHE = 'stillday-shell-v5';
+const SHELL = ['/', '/index.html', '/manifest.webmanifest', '/favicon.svg', '/icon-192.png', '/icon-512.png', '/icon-180.png', '/app.js', '/supabase-config.js', '/demo-tasks.json'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));
   self.skipWaiting();

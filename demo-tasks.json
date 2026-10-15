@@ -1,0 +1,75 @@
+[
+  {
+    "id": "demo-1",
+    "title": "Finish what matters most",
+    "time": 25,
+    "energy": "deep",
+    "context": "Laptop",
+    "area": "Work",
+    "status": "today",
+    "importance": "essential"
+  },
+  {
+    "id": "demo-2",
+    "title": "Send the project update",
+    "time": 5,
+    "energy": "gentle",
+    "context": "Phone",
+    "area": "Work",
+    "status": "today"
+  },
+  {
+    "id": "demo-3",
+    "title": "Take a proper lunch break",
+    "time": 30,
+    "energy": "gentle",
+    "context": "Outdoors",
+    "area": "Health",
+    "status": "today"
+  },
+  {
+    "id": "demo-4",
+    "title": "Book a dentist appointment",
+    "time": 5,
+    "energy": "gentle",
+    "context": "Phone",
+    "area": "Health",
+    "status": "catch"
+  },
+  {
+    "id": "demo-5",
+    "title": "Look into a pottery class",
+    "time": 15,
+    "energy": "steady",
+    "context": "Laptop",
+    "area": "Someday",
+    "status": "catch"
+  },
+  {
+    "id": "demo-6",
+    "title": "Plan the next project milestone",
+    "time": 30,
+    "energy": "steady",
+    "context": "Laptop",
+    "area": "Work",
+    "status": "horizon"
+  },
+  {
+    "id": "demo-7",
+    "title": "Sort the hallway shelf",
+    "time": 15,
+    "energy": "gentle",
+    "context": "Home",
+    "area": "Home",
+    "status": "horizon"
+  },
+  {
+    "id": "demo-8",
+    "title": "Read about balcony herbs",
+    "time": 10,
+    "energy": "gentle",
+    "context": "Phone",
+    "area": "Someday",
+    "status": "horizon"
+  }
+]
