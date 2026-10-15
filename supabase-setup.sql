@@ -48,12 +48,14 @@ create table if not exists public.user_preferences (
   updated_at timestamptz not null default now(),
   radar_minutes integer not null default 15 check (radar_minutes in (5,15,30,60)),
   radar_energy text not null default 'steady' check (radar_energy in ('gentle','steady','deep')),
-  radar_context text not null default 'any'
+  radar_context text not null default 'any',
+  text_scale integer not null default 120 check (text_scale between 100 and 160)
 );
 alter table public.user_preferences add column if not exists categories text[] not null default array['Work','Home','Health','Someday']::text[];
 alter table public.user_preferences add column if not exists radar_minutes integer not null default 15 check (radar_minutes in (5,15,30,60));
 alter table public.user_preferences add column if not exists radar_energy text not null default 'steady' check (radar_energy in ('gentle','steady','deep'));
 alter table public.user_preferences add column if not exists radar_context text not null default 'any';
+alter table public.user_preferences add column if not exists text_scale integer not null default 120 check (text_scale between 100 and 160);
 
 -- Preserve any life areas already assigned to tasks before categories became editable.
 update public.user_preferences p
